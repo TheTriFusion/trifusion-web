@@ -63,13 +63,13 @@ const HomePage = () => {
         </div>
           <div className="flex flex-col gap-6 justify-center items-center h-screen w-screen">
             <div className="text-3xl font-bold w-full font-libre px-8 xm:text-4xl lg:text-8xl ">
-              <div className="flex flex-col gap-4 lg:flex-row">
+              <div className="flex flex-col gap-4 xl:flex-row">
                 <h1>CRAFTING</h1>
                 <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#103ce7] to-[#64e9ff]">
                   VISION
                 </h1>
               </div>
-              <div className="flex flex-col gap-4 lg:flex-row">
+              <div className="flex flex-col gap-4 xl:flex-row">
                 <h1>INTO</h1>
                 <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#103ce7] to-[#64e9ff]">
                   VICTORY

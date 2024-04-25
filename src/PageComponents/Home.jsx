@@ -62,7 +62,7 @@ const HomePage = () => {
           <NavbarPage/>
         </div>
           <div className="flex flex-col gap-6 justify-center items-center h-screen w-screen">
-            <div className="text-4xl font-bold w-full font-libre px-8 xm:text-6xl lg:text-8xl ">
+            <div className="text-3xl font-bold w-full font-libre px-8 xm:text-6xl lg:text-8xl ">
               <div className="flex flex-col gap-4 xm:flex-row">
                 <h1>CRAFTING</h1>
                 <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#103ce7] to-[#64e9ff]">

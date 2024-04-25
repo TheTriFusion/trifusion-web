@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { RiMenu5Fill } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const NavbarPage = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -16,24 +17,24 @@ const NavbarPage = () => {
 
           <ul className="gap-8 lg:flex-row lg:gap-4 mx-8 text-xl font-raleway font-bold hidden lg:flex ">
             <li className="px-8 cursor-pointer hover:text-white transition-all duration-300">
-              <a href="../Home">
+             <Link to='../Home'>
               HOME
-              </a>
+              </Link>
             </li>
             <li className="px-8 cursor-pointer hover:text-white transition-all duration-300">
-              <a href="../Service">
+              <Link to="../Service">
               SERVICES
-                </a>
+                </Link>
             </li>
             <li className="px-8 cursor-pointer hover:text-white transition-all duration-300">
-              <a href="../About">
+              <Link to="../About">
               ABOUT
-            </a>
+            </Link>
             </li>
             <li className="px-8 cursor-pointer hover:text-white transition-all duration-300">
-              <a href="../Contact">
+              <Link to="../Contact">
               CONTACT
-            </a>
+            </Link>
             </li>
           </ul>
           <div onClick={handleNavbar} className="mx-8">
@@ -49,24 +50,24 @@ const NavbarPage = () => {
             } z-50 transition-all ease-in-out duration-300 lg:hidden`}
           >
             <li className="px-8 cursor-pointer hover:text-white transition-all duration-300">
-            <a href="../Home">
+            <Link to="../Home">
                HOME
-               </a>
+               </Link>
             </li>
             <li className="px-8 cursor-pointer hover:text-white transition-all duration-300">
-            <a href="../Service">
+            <Link to="../Service">
                SERVICES
-               </a>
+               </Link>
             </li>
             <li className="px-8 cursor-pointer hover:text-white transition-all duration-300">
-            <a href="../About">
+            <Link to="../About">
                ABOUT
-               </a>
+               </Link>
             </li>
             <li className="px-8 cursor-pointer hover:text-white transition-all duration-300">
-            <a href="../Contact">
+            <Link to="../Contact">
                CONTACT
-               </a>
+               </Link>
             </li>
           </ul>
         </div>

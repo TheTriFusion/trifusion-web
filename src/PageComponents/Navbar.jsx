@@ -46,7 +46,7 @@ const NavbarPage = () => {
           <ul
             className={`items-center gap-8 absolute left-0 flex flex-col w-screen py-8 text-xl font-raleway font-bold bg-gradient-to-r from-[#103ce7] to-[#64e9ff] contrast-100 ${
               showNavbar ? "top-16 " : "top-[-450px]"
-            } z-[-1] transition-all ease-in-out duration-300 lg:hidden`}
+            } z-50 transition-all ease-in-out duration-300 lg:hidden`}
           >
             <li className="px-8 cursor-pointer hover:text-white transition-all duration-300">
             <a href="../Home">

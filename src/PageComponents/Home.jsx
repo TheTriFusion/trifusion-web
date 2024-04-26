@@ -40,21 +40,10 @@ const HomePage = () => {
         .from(
           "#float-one",
           {
-            xPercent: "-100",
+            xPercent: '-100',
             duration: 1,
             delay: 1.5,
-          },
-          "alpha"
-        )
-        .from(
-          "#float-two",
-          {
-            xPercent: "100",
-            duration: 1,
-            delay: 1.5,
-          },
-          "alpha"
-        );
+          })
     }, loadSection);
 
     return () => ctx.revert();
@@ -62,8 +51,8 @@ const HomePage = () => {
   const services = [
     "Web Development",
     "App Development",
-    "Sales & Marketing",
     "Digital Marketing",
+    "Sales & Marketing",
     "Branding",
     "UI/UX",
   ];
@@ -132,9 +121,8 @@ const HomePage = () => {
           </div>
           {/* --- */}
           <div>
-            <div className="font-raleway text-5xl font-semibold p-4 xm:text-9xl mb-8 border border-black flex flex-col gap-2 justify-center items-center lg:flex-row lg:gap-6">
-              <h1 id="float-one">THE </h1>
-              <h1 id="float-two">TRIFUSION</h1>
+            <div className="font-raleway text-5xl font-semibold p-4 xm:text-9xl mb-8 border border-black text-center">
+              <h1 id="float-one">THE TRIFUSION </h1>
             </div>
           </div>
           {/* --- */}

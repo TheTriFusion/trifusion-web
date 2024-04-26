@@ -71,33 +71,7 @@ const ServicePage = () => {
           {/* --- */}
           <div>
             <div className="flex flex-col gap-8">
-              <section className="bg-gray-100 h-max py-8 px-4 flex flex-col gap-4 m:flex-row m:gap-2 justify-center items-center">
-                <div className="w-full lg:w-4/5 p-4">
-                  <h1 className="text-xl font-libre font-semibold text-center lg:text-3xl lg:text-left">
-                    APP DEVELOPMENT
-                  </h1>
-                  <p className="text-lg p-8 font-raleway lg:text-xl">
-                    Cutting-edged app development solutions tailored to your
-                    unique business needs. With our expertise in mobile
-                    technology and user-centric design, we help businesses of
-                    all sizes create innovative and engaging mobile applications
-                    that drive success in today digital landscape.
-                  </p>
-                  <ul className="text-lg p-2 list-disc list-inside lg:text-xl font-raleway">
-                    <li>Native IOS App Development</li>
-                    <li>Native Android App Development</li>
-                  </ul>
-                </div>
-                <div className="lg:w-2/5 w-full xm:w-1/2 shadow-lg shadow-gray-700 rounded-3xl flex justify-center">
-                  <img
-                    src="../Images/service-app-development.png"
-                    alt=""
-                    className="rounded-3xl xl:w-96 xl:h-96 w-64 h-64 content-center"
-                  />
-                </div>
-              </section>
-              {/* |||  */}
-              <section className="bg-gray-100 h-max py-8 px-4 flex flex-col gap-4 m:flex-row m:gap-2 justify-center items-center">
+             <section className="bg-gray-100 h-max py-8 px-4 flex flex-col gap-4 m:flex-row m:gap-2 justify-center items-center">
                 <div className="w-full lg:w-4/5 p-4">
                   <h1 className="text-xl font-libre font-semibold text-center lg:text-3xl lg:text-left">
                     WEB DEVELOPMENT
@@ -119,6 +93,32 @@ const ServicePage = () => {
                 <div className="lg:w-2/5 w-full xm:w-1/2 shadow-lg shadow-gray-700 rounded-3xl flex justify-center">
                   <img
                     src="../Images/service-web-development.png"
+                    alt=""
+                    className="rounded-3xl xl:w-96 xl:h-96 w-64 h-64 content-center"
+                  />
+                </div>
+              </section>
+              {/* |||  */}
+               <section className="bg-gray-100 h-max py-8 px-4 flex flex-col gap-4 m:flex-row m:gap-2 justify-center items-center">
+                <div className="w-full lg:w-4/5 p-4">
+                  <h1 className="text-xl font-libre font-semibold text-center lg:text-3xl lg:text-left">
+                    APP DEVELOPMENT
+                  </h1>
+                  <p className="text-lg p-8 font-raleway lg:text-xl">
+                    Cutting-edged app development solutions tailored to your
+                    unique business needs. With our expertise in mobile
+                    technology and user-centric design, we help businesses of
+                    all sizes create innovative and engaging mobile applications
+                    that drive success in today digital landscape.
+                  </p>
+                  <ul className="text-lg p-2 list-disc list-inside lg:text-xl font-raleway">
+                    <li>Native IOS App Development</li>
+                    <li>Native Android App Development</li>
+                  </ul>
+                </div>
+                <div className="lg:w-2/5 w-full xm:w-1/2 shadow-lg shadow-gray-700 rounded-3xl flex justify-center">
+                  <img
+                    src="../Images/service-app-development.png"
                     alt=""
                     className="rounded-3xl xl:w-96 xl:h-96 w-64 h-64 content-center"
                   />

@@ -1,5 +1,9 @@
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faFacebook, faInstagram, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 
+library.add(faFacebook, faInstagram, faLinkedinIn, faWhatsapp);
 const FooterPage = () => {
   return (
     <>
@@ -25,18 +29,22 @@ const FooterPage = () => {
             </div>
             <div className="w-full 2xl:mt-4 h-72 flex flex-col justify-center items-center m:max-3xl:w-72">
                 <h1 className="text-center text-2xl m-4 font-libre">Important Links</h1>
-                <ul className="gap-4 grid grid-cols-2 text-base mt-2 justify-center items-center m:max-3xl:justify-start m:max-3xl:items-start font-raleway xxm:text-xl">
+                <ul className="gap-4 grid grid-cols-2 text-base mt-2 justify-center items-center m:max-3xl:justify-start m:max-3xl:items-start font-raleway xxm:text-xl 2xl:flex 2xl:flex-col 2xl:gap-4">
                     
-                        <a href="https://www.instagram.com/thetrifusion/">
+                        <a href="https://www.instagram.com/thetrifusion/" className='flex flex-row gap-2 justify-center items-center px-2 2xl:w-36'>
+                        <FontAwesomeIcon icon={faInstagram} />
                         <li>Instagram</li>
                         </a>
-                    <a href="https://wa.me/6378133780">
+                    <a href="https://wa.me/6378133780" className='flex flex-row gap-2 justify-center items-center 2xl:w-36 px-2'>
+                        <FontAwesomeIcon icon={faWhatsapp} />
                         <li>Whatsapp</li>
                         </a>
-                        <a href="https://www.linkedin.com/in/the-trifusion-4660032b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                        <a href="https://www.linkedin.com/in/the-trifusion-4660032b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className='flex flex-row gap-2 justify-center items-center 2xl:w-36 px-2'>
+                        <FontAwesomeIcon icon={faLinkedinIn} />
                         <li>LinkedIn</li>
                         </a>
-                        <a href="https://www.facebook.com/profile.php?id=61557420276022">
+                        <a href="https://www.facebook.com/profile.php?id=61557420276022" className='flex flex-row gap-2 justify-center items-center 2xl:w-36 px-2'>
+                        <FontAwesomeIcon icon={faFacebook} />
                         <li>Facebook</li>
                         </a>
                 </ul>
@@ -58,4 +66,8 @@ const FooterPage = () => {
   )
 }
 
-export default FooterPage
+export default FooterPage;
+//
+//
+//
+//

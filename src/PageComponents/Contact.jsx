@@ -40,7 +40,7 @@ const ContactPage = () => {
               <NavbarPage/>
             </div>
                         <div className='my-8 flex flex-col justify-center items-center' id='contactBox'> 
-                <div className='w-full font-libre flex flex-col gap-4 justify-center items-center' id='contactHead'>
+                <div className='w-full font-libre flex flex-col gap-4 justify-center items-center pb-4' id='contactHead'>
                     <h1 className=' text-[5vw] font-bold text-center'>CONTACT</h1>
                     <h1 className=' text-[5vw] font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#103ce7] to-[#64e9ff]'>THE TRIFUSION</h1>
                 </div>

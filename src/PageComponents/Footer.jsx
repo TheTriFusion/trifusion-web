@@ -5,15 +5,15 @@ const FooterPage = () => {
     <>
         <section>
             <div className='bg-white border border-black m-2'>
-        <div className="h-max w-full flex flex-col gap-8 justify-evenly m:max-3xl:flex-row m:max-3xl:h-[75vh] " >
-            <div className="mt-4 text-center h-72 flex flex-col items-center justify-center gap-0 font-libre">
-                <img src="../images/footer-logo.png" alt="" className="w-32 h-32 m-4" />
+        <div className="h-max w-full flex flex-col gap-0 justify-evenly m:grid m:grid-cols-2 2xl:flex 2xl:flex-row 2xl:gap-2" >
+            <div className="2xl:mt-4 text-center h-72 flex flex-col items-center justify-center gap-0 font-libre">
+                <img src="../images/company-logo.jpg" alt="" className="w-32 h-32 m-4" />
                 <h1 className="text-4xl">The TriFusion</h1>
                 <p>(All right reserved)</p>
             </div>
-            <div className="w-full mt-4 h-72 flex flex-col justify-center items-center m:max-3xl:w-72">
+            <div className="w-full 2xl:mt-4 h-72 flex flex-col justify-center items-center 2xl:w-72 m:h-max">
                 <h1 className="text-center text-2xl m-4 font-libre">Connect To Us Through</h1>
-                <ul className="gap-4 flex flex-col text-base mt-2 justify-center items-center m:max-3xl:justify-start m:max-3xl:items-start font-raleway xxm:text-xl">
+                <ul className="gap-4 flex flex-col text-base mt-2 justify-center items-center 2xl:justify-start 2xl:items-start font-raleway xxm:text-xl">
                     <li>Sector-5, R.C. Vyas Colony
                         <br/>
                         Bhilwara, Rajasthan, 311001
@@ -23,7 +23,7 @@ const FooterPage = () => {
                     <li>www.thetrifusion.com</li>
                 </ul>
             </div>
-            <div className="w-full mt-4 h-72 flex flex-col justify-center items-center m:max-3xl:w-72">
+            <div className="w-full 2xl:mt-4 h-72 flex flex-col justify-center items-center m:max-3xl:w-72">
                 <h1 className="text-center text-2xl m-4 font-libre">Important Links</h1>
                 <ul className="gap-4 grid grid-cols-2 text-base mt-2 justify-center items-center m:max-3xl:justify-start m:max-3xl:items-start font-raleway xxm:text-xl">
                     
@@ -41,7 +41,7 @@ const FooterPage = () => {
                         </a>
                 </ul>
             </div>
-            <div className="w-full mt-4 h-72 flex flex-col justify-center items-center m:max-3xl:w-72">
+            <div className="w-full 2xl:mt-4 h-72 flex flex-col justify-center items-center 2xl:w-72">
                 <h1 className="text-center text-2xl m-4 font-libre">Get to Us</h1>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7210.395256932822!2d74.6326986376564!3d25.36469220502349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c2550919a8a7%3A0xb52d32f05198ba59!2sSector%205%2C%20R%20C%20Vyas%20Colony%2C%20Bhilwara%2C%20Rajasthan%20311001!5e0!3m2!1sen!2sin!4v1710324788989!5m2!1sen!2sin"

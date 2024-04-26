@@ -1,16 +1,46 @@
-import React from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import '../App.css';
 import NavbarPage from './Navbar';
 import FooterPage from "./Footer";
+import gsap from "gsap";
+
 const ServicePage = () => {
+  const service = useRef(null);
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const trnasOne = gsap.timeline();
+      trnasOne.from('#navbarBox',{
+        yPercent: '-100',
+        duration: 1,
+        delay: 0.5
+      })
+      .from('#serviceBox',{
+        yPercent: '100',
+        duration: 1.5,
+        delay: 1,
+        zIndex: 0
+      })
+      .from('#mainBox',{
+        opacity: 0,
+        duration: 1,
+        delay: 1.2
+      })
+      .from('#footerBox',{
+        yPercent: '-100',
+        duration: 1,
+        delay: 1.5
+      })
+    }, service)
+    return () => ctx.revert();
+  },[])
   return (
     <>
-      <section >
-       <div>
+      <section ref={service}>
+       <div id="navbarBox">
           <NavbarPage/>
         </div>
-        <section>
-            <div className="flex flex-col gap-4 m:flex-row m:gap-2 justify-center items-center border-b border-black pb-8">
+        <section id="serviceBox">
+            <div className="flex flex-col gap-4 m:flex-row m:gap-2 justify-center items-center border-b border-black pb-8" id="mainBox">
               <div className="flex flex-col gap-6 mb-8 ">
                 <h1 className="text-2xl font-semibold px-8 py-4 font-libre justify-center items-center flex flex-col gap-4 xm:justify-start xm:items-start xm:text-5xl">
                   WE ARE GOOD AT
@@ -20,7 +50,7 @@ const ServicePage = () => {
                   visual design.
                 </p>
               </div>
-              <div className="h-96 w-96 flex justify-center items-center bg-opacity-50">
+              <div className="lg:h-96 lg:w-96 flex justify-center items-center bg-opacity-50 w-72 h-72">
                 <img src="../Images/service-banner.png" alt="" />
               </div>
             </div>
@@ -28,11 +58,11 @@ const ServicePage = () => {
           <div>
             <div className="text-2xl font-semibold px-8 py-4 font-libre justify-center items-center flex flex-col gap-4 xm:justify-start xm:items-start xm:text-5xl">
               <div>
-                <h1>THE SERVICES</h1>
+                <h1>SERVICES</h1>
               </div>
-              <div className="flex flex-row gap-2 xm:ml-8">
+              <div className="flex flex-col gap-2 xm:ml-8 lg:flex-row justify-center items-center">
                 <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#103ce7] to-[#64e9ff]">
-                  TRIFUSION
+                  THE TRIFUSION
                 </h1>
                 <h1>OFFERS</h1>
               </div>
@@ -44,7 +74,7 @@ const ServicePage = () => {
               <section className="bg-gray-100 h-max py-8 px-4 flex flex-col gap-4 m:flex-row m:gap-2 justify-center items-center">
                 <div className="w-full lg:w-4/5 p-4">
                   <h1 className="text-xl font-libre font-semibold text-center lg:text-3xl lg:text-left">
-                    MOBILE APP DEVELOPMENT
+                    APP DEVELOPMENT
                   </h1>
                   <p className="text-lg p-8 font-raleway lg:text-xl">
                     Cutting-edged app development solutions tailored to your
@@ -58,11 +88,11 @@ const ServicePage = () => {
                     <li>Native Android App Development</li>
                   </ul>
                 </div>
-                <div className="lg:w-2/5 w-full xm:w-1/2 shadow-lg shadow-gray-700 rounded-3xl">
+                <div className="lg:w-2/5 w-full xm:w-1/2 shadow-lg shadow-gray-700 rounded-3xl flex justify-center">
                   <img
                     src="../Images/service-app-development.png"
                     alt=""
-                    className="rounded-3xl"
+                    className="rounded-3xl xl:w-96 xl:h-96 w-64 h-64 content-center"
                   />
                 </div>
               </section>
@@ -86,38 +116,11 @@ const ServicePage = () => {
                     <li>Responsive Web Apps</li>
                   </ul>
                 </div>
-                <div className="lg:w-2/5 w-full xm:w-1/2 shadow-lg shadow-gray-700 rounded-3xl">
+                <div className="lg:w-2/5 w-full xm:w-1/2 shadow-lg shadow-gray-700 rounded-3xl flex justify-center">
                   <img
                     src="../Images/service-web-development.png"
                     alt=""
-                    className="rounded-3xl"
-                  />
-                </div>
-              </section>
-              {/* |||  */}
-              <section className="bg-gray-100 h-max py-8 px-4 flex flex-col gap-4 m:flex-row m:gap-2 justify-center items-center">
-                <div className="w-full lg:w-4/5 p-4">
-                  <h1 className="text-xl font-libre font-semibold text-center lg:text-3xl lg:text-left">
-                    UI / UX
-                  </h1>
-                  <p className="text-lg p-8 font-raleway lg:text-xl">
-                    UI/UX design is the catalyst behind the success of any web
-                    or mobile app. We are with a knack of turning great ideas
-                    into meaningful interactions. From the initial concept to
-                    information architecture, visual identity, and UX design, we
-                    offer a full range of design services.
-                  </p>
-                  <ul className="text-lg p-2 list-disc list-inside lg:text-xl font-raleway">
-                    <li>Responsive Web Design</li>
-                    <li>UI Design</li>
-                    <li>Mobile App Design</li>
-                  </ul>
-                </div>
-                <div className="lg:w-2/5 w-full xm:w-1/2 shadow-lg shadow-gray-700 rounded-3xl">
-                  <img
-                    src="../Images/service-ui-ux.png"
-                    alt=""
-                    className="rounded-3xl"
+                    className="rounded-3xl xl:w-96 xl:h-96 w-64 h-64 content-center"
                   />
                 </div>
               </section>
@@ -141,11 +144,11 @@ const ServicePage = () => {
                     <li>Corporate Videos</li>
                   </ul>
                 </div>
-                <div className="lg:w-2/5 w-full xm:w-1/2 shadow-lg shadow-gray-700 rounded-3xl">
+                <div className="lg:w-2/5 w-full xm:w-1/2 shadow-lg shadow-gray-700 rounded-3xl flex justify-center">
                   <img
                     src="../Images/service-digital-marketing.png"
                     alt=""
-                    className="rounded-3xl"
+                    className="rounded-3xl xl:w-96 xl:h-96 w-64 h-64 content-center"
                   />
                 </div>
               </section>
@@ -166,11 +169,11 @@ const ServicePage = () => {
                     <li>Market Strategy</li>
                   </ul>
                 </div>
-                <div className="lg:w-2/5 w-full xm:w-1/2 shadow-lg shadow-gray-700 rounded-3xl">
+                <div className="lg:w-2/5 w-full xm:w-1/2 shadow-lg shadow-gray-700 rounded-3xl  flex justify-center">
                   <img
                     src="../Images/service-marketing-sales.png"
                     alt=""
-                    className="rounded-3xl"
+                    className="rounded-3xl xl:w-96 xl:h-96 w-64 h-64 content-center"
                   />
                 </div>
               </section>
@@ -193,17 +196,44 @@ const ServicePage = () => {
                     <li>Public Reaction</li>
                   </ul>
                 </div>
-                <div className="lg:w-2/5 w-full xm:w-1/2 shadow-lg shadow-gray-700 rounded-3xl">
+                <div className="lg:w-2/5 w-full xm:w-1/2 shadow-lg shadow-gray-700 rounded-3xl flex justify-center">
                   <img
                     src="../Images/service-branding.png"
                     alt=""
-                    className="rounded-3xl"
+                    className="rounded-3xl xl:w-96 xl:h-96 w-64 h-64 content-center"
+                  />
+                </div>
+              </section>
+              {/* |||  */}
+              <section className="bg-gray-100 h-max py-8 px-4 flex flex-col gap-4 m:flex-row m:gap-2 justify-center items-center">
+                <div className="w-full lg:w-4/5 p-4">
+                  <h1 className="text-xl font-libre font-semibold text-center lg:text-3xl lg:text-left">
+                    UI / UX
+                  </h1>
+                  <p className="text-lg p-8 font-raleway lg:text-xl">
+                    UI/UX design is the catalyst behind the success of any web
+                    or mobile app. We are with a knack of turning great ideas
+                    into meaningful interactions. From the initial concept to
+                    information architecture, visual identity, and UX design, we
+                    offer a full range of design services.
+                  </p>
+                  <ul className="text-lg p-2 list-disc list-inside lg:text-xl font-raleway">
+                    <li>Responsive Web Design</li>
+                    <li>UI Design</li>
+                    <li>Mobile App Design</li>
+                  </ul>
+                </div>
+                <div className="lg:w-2/5 w-full xm:w-1/2 shadow-lg shadow-gray-700 rounded-3xl flex justify-center">
+                  <img
+                    src="../Images/service-ui-ux.png"
+                    alt=""
+                    className="rounded-3xl xl:w-96 xl:h-96 w-64 h-64 content-center"
                   />
                 </div>
               </section>
             </div>
           </div>
-          <div>
+          <div id="footerBox">
             <FooterPage/>
           </div>
         </section>

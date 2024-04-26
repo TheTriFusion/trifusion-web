@@ -1,73 +1,33 @@
-import React, { useState } from "react";
-import { RiMenu5Fill } from "react-icons/ri";
-import { IoClose } from "react-icons/io5";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const NavbarPage = () => {
-  const [showNavbar, setShowNavbar] = useState(false);
-
-  const handleNavbar = () => {
-    setShowNavbar(!showNavbar);
-  };
   return (
     <>
       <section>
-        <div className="bg-gradient-to-r from-[#103ce7] to-[#64e9ff] w-full h-auto p-5 flex flex-row gap-4 lg:flex-row lg:gap-0 items-center justify-between relative">
-          <h1 className="text-3xl font-libre font-bold">The TriFusion</h1>
-
-          <ul className="gap-8 lg:flex-row lg:gap-4 mx-8 text-xl font-raleway font-bold hidden lg:flex ">
-            <li className="px-8 cursor-pointer hover:text-white transition-all duration-300">
+        <div className="bg-gradient-to-r from-[#103ce7] to-[#64e9ff] w-full h-auto p-5 flex flex-col  xl:flex-row gap-4 items-center justify-center relative  xl:justify-between">
+          <h1 className="text-3xl font-libre font-bold text-white w-full  xl:w-1/2 text-center">The TriFusion</h1>
+          
+          <ul className="s:text-lg text-base xm:text-2xl font-raleway font-bold text-white flex flex-row gap-4 px-4">
+            <li className=" cursor-pointer lg:mx-4 lg:w-32 text-center s:w-24">
              <Link to='../Home'>
               HOME
               </Link>
             </li>
-            <li className="px-8 cursor-pointer hover:text-white transition-all duration-300">
+            <li className="  cursor-pointer lg:mx-4 lg:w-32 text-center s:w-24">
               <Link to="../Service">
               SERVICES
                 </Link>
             </li>
-            <li className="px-8 cursor-pointer hover:text-white transition-all duration-300">
+            <li className="  cursor-pointer lg:mx-4 lg:w-32 text-center s:w-24">
               <Link to="../About">
               ABOUT
             </Link>
             </li>
-            <li className="px-8 cursor-pointer hover:text-white transition-all duration-300">
+            <li className="  cursor-pointer lg:mx-4 lg:w-32 text-center s:w-24">
               <Link to="../Contact">
               CONTACT
             </Link>
-            </li>
-          </ul>
-          <div onClick={handleNavbar} className="mx-8">
-            {showNavbar ? (
-              <IoClose className="text-2xl font-bold cursor-pointer lg:hidden transition-all duration-300" />
-            ) : (
-              <RiMenu5Fill className="text-2xl font-bold cursor-pointer lg:hidden transition-all duration-300 " />
-            )}
-          </div>
-          <ul
-            className={`items-center gap-8 absolute left-0 flex flex-col w-screen py-8 text-xl font-raleway font-bold bg-gradient-to-r from-[#103ce7] to-[#64e9ff] contrast-100 ${
-              showNavbar ? "top-16 " : "top-[-450px]"
-            } z-50 transition-all ease-in-out duration-300 lg:hidden`}
-          >
-            <li className="px-8 cursor-pointer hover:text-white transition-all duration-300">
-            <Link to="../Home">
-               HOME
-               </Link>
-            </li>
-            <li className="px-8 cursor-pointer hover:text-white transition-all duration-300">
-            <Link to="../Service">
-               SERVICES
-               </Link>
-            </li>
-            <li className="px-8 cursor-pointer hover:text-white transition-all duration-300">
-            <Link to="../About">
-               ABOUT
-               </Link>
-            </li>
-            <li className="px-8 cursor-pointer hover:text-white transition-all duration-300">
-            <Link to="../Contact">
-               CONTACT
-               </Link>
             </li>
           </ul>
         </div>

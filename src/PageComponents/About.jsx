@@ -8,14 +8,26 @@ const AboutPage = () => {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       const slider = gsap.timeline();
-      slider.from('#aboutBox',{
+      slider.from('#navbarBox',{
         yPercent: '-100',
-        duration: 1
+        duration: 1,
+        delay: 0.5
+      })
+      .from('#aboutBox',{
+        yPercent: '100',
+        duration: 1,
+        delay: 1,
+        zIndex: 0
       })
       .from('#aboutHead',{
         opacity: 0,
         duration: 1,
-        delay: 0.5
+        delay: 1.5
+      })
+      .from('#footerBox',{
+        yPercent: '100',
+        duration: 1,
+        delay: 1.6
       })
     },about)
     return () => ctx.revert();
@@ -23,14 +35,16 @@ const AboutPage = () => {
   return (
     <>
         <section ref={about}>
-            <section id='aboutBox'>
-            <div>
+            <section>
+            <div id='navbarBox'>
                 <NavbarPage/>
             </div>
-                 <div className='my-8 flex flex-col justify-center items-center'>
-                <div className='w-full font-libre' id='aboutHead'>
+                 <div className='my-8 flex flex-col justify-center items-center' id='aboutBox'>
+                <div className='w-full font-libre flex flex-col gap-4 justify-center items-center' id='aboutHead'>
                     <h1 className=' font-libre text-[5vw] font-bold text-center'>ABOUT</h1>
-                    <h1 className=' font-libre text-[8vw] font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#103ce7] to-[#64e9ff]'>THE TRIFUSION</h1>
+                    <h1 className=' font-libre text-[5vw] font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#103ce7] to-[#64e9ff]'>THE TRIFUSION</h1>
+                </div>
+                <div className='bg-gradient-to-r from-[#103ce7] to-[#64e9ff] h-[5vh] w-full'>
                 </div>
                 <div className='w-full flex flex-col gap-4 xm:gap-0 justify-center items-center m:flex-row'>
                     <div className='w-[80vw] xm:w-[70vw]'>
@@ -47,11 +61,11 @@ const AboutPage = () => {
                         </article>
                     </div>
                     <div className='w-[80vw] xm:w-[30vw] content-center justify-items-center'>
-                        <img src="../Images/footer-logo.png" alt="" />
+                        <img src="../Images/company-logo.jpg" alt="" />
                     </div>
                 </div>
             </div>
-            <div>
+            <div id='footerBox'>
                 <FooterPage/>
             </div>
             </section>

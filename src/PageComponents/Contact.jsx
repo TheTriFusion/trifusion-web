@@ -8,14 +8,26 @@ const ContactPage = () => {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       const slider = gsap.timeline();
-      slider.from('#contactBox',{
+      slider.from('#navbarBox',{
         yPercent: '-100',
-        duration: 1
+        duration: 1,
+        delay: 0.5
+      })
+      .from('#contactBox',{
+        yPercent: '100',
+        duration: 1,
+        delay: 1,
+        zIndex: 0
       })
       .from('#contactHead',{
         opacity: 0,
         duration: 1,
-        delay: 0.5
+        delay: 1.5
+      })
+      .from('#footerBox',{
+        yPercent: '100',
+        duration: 1,
+        delay: 1.6
       })
     },contact)
     return () => ctx.revert();
@@ -23,16 +35,16 @@ const ContactPage = () => {
   return (
     <>
         <section ref={contact}>
-            <section id='contactBox'>
-            <div>
+            <section>
+            <div id='navbarBox'>
               <NavbarPage/>
             </div>
-                        <div className='my-8 flex flex-col justify-center items-center'> 
-                <div className='w-full font-libre' id='contactHead'>
+                        <div className='my-8 flex flex-col justify-center items-center' id='contactBox'> 
+                <div className='w-full font-libre flex flex-col gap-4 justify-center items-center' id='contactHead'>
                     <h1 className=' text-[5vw] font-bold text-center'>CONTACT</h1>
-                    <h1 className=' text-[8vw] font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#103ce7] to-[#64e9ff]'>THE TRIFUSION</h1>
+                    <h1 className=' text-[5vw] font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#103ce7] to-[#64e9ff]'>THE TRIFUSION</h1>
                 </div>
-                <div className='bg-gradient-to-r from-[#103ce7] to-[#64e9ff] h-[10vh] w-full'>
+                <div className='bg-gradient-to-r from-[#103ce7] to-[#64e9ff] h-[5vh] w-full'>
                 </div>
                  <div className="flex flex-col m-4 h-max justify-evenly items-center rounded-3xl m:max-3xl:flex-row m:max-3xl:m-32 shadow-lg shadow-black w-max px-2">
         <img src="../Images/contact-form.png" alt="" className="w-64 h-full m-4 m:max-3xl:w-96"/>
@@ -133,7 +145,7 @@ const ContactPage = () => {
                 </form>
         </div>
             </div>
-            <div>
+            <div id='footerBox'>
               <FooterPage/>
             </div>
             </section>

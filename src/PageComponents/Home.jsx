@@ -130,7 +130,7 @@ const HomePage = () => {
             <div className="flex flex-col gap-4 border-b border-black mb-8">
               <div className="text-2xl font-semibold px-8 py-4 font-libre justify-center items-center flex flex-col gap-4 xm:justify-start xm:items-start xm:text-5xl">
                 <h1> WHY TO CHOOSE</h1>
-                <h1>THE TRIFUSION</h1>
+                <h1 className="text-transparent brightness-150 bg-clip-text bg-gradient-to-r from-[#103ce7] to-[#64e9ff]">THE TRIFUSION</h1>
               </div>
               <div className="flex flex-col gap-4 m:flex-row justify-center items-center font-raleway">
                 <p className="w-full text-xl xm:text-2xl text-center xm:text-left m:w-1/2 p-8">
@@ -148,8 +148,8 @@ const HomePage = () => {
           {/* --- */}
           <div>
             <div className="flex flex-col gap-4 border-b border-black mb-8">
-              <div className="text-center font-libre text-5xl tracking-widest [text-shadow:_0_4px_0_rgb(0_0_0_/_40%)] xm:text-7xl lg:text-9xl">
-                <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#103ce7] to-[#64e9ff]">
+              <div className="text-center font-libre text-5xl tracking-widest font-black xm:text-7xl lg:text-9xl">
+                <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#103ce7] to-[#64e9ff]" id="wedo">
                   WE DO
                 </h1>
               </div>
@@ -187,7 +187,7 @@ const HomePage = () => {
             <div className="flex flex-col gap-4 border-b border-black mb-8 pb-8 px-4">
               <div className="text-2xl font-semibold px-8 py-4 font-libre justify-center items-center flex flex-col gap-4 xm:justify-end xm:items-end xm:text-5xl">
                 <h1>WHAT YOU GET WITH </h1>
-                <h1>THE TRIFUSION</h1>
+                <h1 className="text-transparent brightness-150 bg-clip-text bg-gradient-to-r from-[#103ce7] to-[#64e9ff]">THE TRIFUSION</h1>
               </div>
               <div className="flex flex-col gap-4 lg:flex-row justify-center items-center font-raleway">
                 <div className="border-[5px] rounded-3xl border-red-300 h-96 w-72 flex flex-col gap-4 justify-center items-center xm:w-80 lg:w-96">

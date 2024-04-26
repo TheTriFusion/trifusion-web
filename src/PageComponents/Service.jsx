@@ -56,13 +56,14 @@ const ServicePage = () => {
             </div>
           {/* --- */}
           <div>
-            <div className="text-2xl font-semibold px-8 py-4 font-libre justify-center items-center flex flex-col gap-4 xm:justify-start xm:items-start xm:text-5xl">
-              <div>
+            <div className="text-2xl font-semibold px-8 py-4 font-libre justify-center items-center flex flex-col gap-4 s:justify-start s:items-start s:text-3xl xm:text-5xl">
+              <div className="flex flex-col gap-4 s:flex-row justify-center items-center">
                 <h1>SERVICES</h1>
+                <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#103ce7] to-[#64e9ff]">THE </h1>
               </div>
-              <div className="flex flex-col gap-2 xm:ml-8 lg:flex-row justify-center items-center">
+              <div className="flex flex-col gap-4 s:ml-8 s:flex-row justify-center items-center">
                 <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#103ce7] to-[#64e9ff]">
-                  THE TRIFUSION
+                  TRIFUSION
                 </h1>
                 <h1>OFFERS</h1>
               </div>

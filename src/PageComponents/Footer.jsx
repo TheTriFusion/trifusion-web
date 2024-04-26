@@ -11,7 +11,7 @@ const FooterPage = () => {
             <div className='bg-white border border-black m-2'>
         <div className="h-max w-full flex flex-col gap-0 justify-evenly m:grid m:grid-cols-2 2xl:flex 2xl:flex-row 2xl:gap-2" >
             <div className="2xl:mt-4 text-center h-72 flex flex-col items-center justify-center gap-0 font-libre">
-                <img src="../images/company-logo.jpg" alt="" className="w-32 h-32 m-4" />
+                <img src="../Images/company-logo.jpg" alt="" className="w-32 h-32 m-4" />
                 <h1 className="text-4xl">The TriFusion</h1>
                 <p>(All right reserved)</p>
             </div>

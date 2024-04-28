@@ -13,7 +13,7 @@ const FooterPage = () => {
             <div className="2xl:mt-4 text-center h-72 flex flex-col items-center justify-center gap-0 font-libre">
                 <img src="../Images/company-logo.jpg" alt="" className="w-32 h-32 m-4" />
                 <h1 className="text-4xl">The TriFusion</h1>
-                <p>(All right reserved)</p>
+                <p>(All rights reserved)</p>
             </div>
             <div className="w-full 2xl:mt-4 h-72 flex flex-col justify-center items-center 2xl:w-72 m:h-max">
                 <h1 className="text-center text-2xl m-4 font-libre">Connect To Us Through</h1>
@@ -31,7 +31,7 @@ const FooterPage = () => {
                 <h1 className="text-center text-2xl m-4 font-libre">Important Links</h1>
                 <ul className="gap-4 grid grid-cols-2 text-base mt-2 justify-center items-center m:max-3xl:justify-start m:max-3xl:items-start font-raleway xxm:text-xl 2xl:flex 2xl:flex-col 2xl:gap-4">
                     
-                        <a href="https://www.instagram.com/thetrifusion/" className='flex flex-row gap-2 justify-center items-center px-2 2xl:w-36'>
+                        <a href="https://www.instagram.com/thetrifusion/" className='flex flex-row gap-2 justify-center items-center px-2 2xl:w-36 pr-4'>
                         <FontAwesomeIcon icon={faInstagram} />
                         <li>Instagram</li>
                         </a>
@@ -39,7 +39,7 @@ const FooterPage = () => {
                         <FontAwesomeIcon icon={faWhatsapp} />
                         <li>Whatsapp</li>
                         </a>
-                        <a href="https://www.linkedin.com/in/the-trifusion-4660032b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className='flex flex-row gap-2 justify-center items-center 2xl:w-36 px-2'>
+                        <a href="https://www.linkedin.com/company/the-trifusion/" className='flex flex-row gap-2 justify-center items-center 2xl:w-36 pr-4'>
                         <FontAwesomeIcon icon={faLinkedinIn} />
                         <li>LinkedIn</li>
                         </a>

@@ -64,7 +64,7 @@ const HomePage = () => {
       >
         <section
           id="loadBox"
-          className="absolute w-screen h-screen inset-0 z-10 text-3xl flex flex-col gap-8 justify-center items-start lg:text-8xl font-libre font-semibold bg-[#FEFDED] px-8"
+          className="absolute w-screen h-screen inset-0 z-10 text-3xl xm:text-5xl lg:text-6xl 2xl:text-8xl flex flex-col gap-8 justify-center items-start font-libre font-semibold bg-[#FEFDED] px-8 overflow-y-hidden"
         >
           <h1 id="heading-one">Sales</h1>
           <h1 id="heading-two">Marketing</h1>
@@ -72,34 +72,24 @@ const HomePage = () => {
         </section>
         <section
           id="contentBox"
-          className="border border-black flex flex-col gap-2"
+          className="flex flex-col gap-2"
         >
           <div>
             <NavbarPage />
           </div>
-          <div id="video-background-container" className="relative w-full h-screen overflow-hidden">
-            <video
-              src="../Images/banner.mp4"
-              autoPlay
-              muted
-              loop
-              id="video-background"
-              className="absolute w-full h-full object-cover"
-            ></video>
-            <div className="absolute inset-0 bg-black opacity-75">
             <div
               className="flex flex-col gap-6 justify-center items-center h-screen w-screen relative "
               id="homeBox"
             >
-              <div className="text-3xl font-bold w-full flex flex-col gap-4 font-libre px-8 xm:text-4xl lg:text-5xl 2xl:text-7xl z-10">
+              <div className="text-3xl font-bold w-full flex flex-col gap-4 font-libre px-8 xm:text-5xl lg:text-6xl 2xl:text-8xl">
                 <div className="flex flex-col gap-4 xl:flex-row">
-                  <h1 className="text-white brightness-150">TRANSFORMING</h1>
+                  <h1>TRANSFORM</h1>
                   <h1 className="text-transparent brightness-150 bg-clip-text bg-gradient-to-r from-[#103ce7] to-[#64e9ff]">
                     VISION
                   </h1>
                 </div>
                 <div className="flex flex-col gap-4 xl:flex-row">
-                  <h1 className="text-white">INTO</h1>
+                  <h1>INTO</h1>
                   <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#103ce7] to-[#64e9ff]">
                     VICTORY
                   </h1>
@@ -107,7 +97,7 @@ const HomePage = () => {
               </div>
               <div className="w-full font-libre px-8 z-10">
                 <div className="flex flex-col gap-6 justify-evenly items-center xm:flex-row">
-                  <p className="w-full text-2xl xm:w-1/2 xm:text-4xl text-white">
+                  <p className="w-full text-2xl xm:w-1/2 xm:text-4xl">
                     WE HELP OUR CLIENTS TELL THEIR STORIES AND MAKE THEM
                     UNFORGETTABLE
                   </p>
@@ -117,8 +107,6 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            </div>
-          </div>
           {/* --- */}
           <div>
             <div className="font-raleway text-5xl font-semibold p-4 xm:text-9xl mb-8 border border-black text-center">

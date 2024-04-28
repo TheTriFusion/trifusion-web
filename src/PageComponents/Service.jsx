@@ -17,13 +17,11 @@ const ServicePage = () => {
       .from('#serviceBox',{
         yPercent: '100',
         duration: 1.5,
-        delay: 1,
-        zIndex: 0
+        delay: 0.5,
       })
       .from('#mainBox',{
         opacity: 0,
         duration: 1,
-        delay: 1.2
       })
       .from('#footerBox',{
         yPercent: '-100',

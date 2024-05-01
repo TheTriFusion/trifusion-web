@@ -122,11 +122,11 @@ const HomePage = () => {
               </div>
               <div className="flex flex-col gap-4 m:flex-row justify-center items-center font-raleway">
                 <p className="w-full text-xl xm:text-2xl text-center xm:text-left m:w-1/2 p-8">
-                  Tri Fusion offers comprehensive digital services, including
-                  digital marketing, app development, and sales tactics. With
-                  years of experience, they prioritize oneon-one client meetings
-                  and engagements, ensuring accurate project execution. They are
-                  a reliable partner for start-ups and established companies in
+                  The TriFusion offers comprehensive digital services, including
+                  web development, app development, digital marketing, and sales tactics,
+                  with years of experience. We prioritize one-on-one client meetings
+                  and engagements to ensure precise project execution. We stand as
+                  a reliable partner for start-ups and established companies within
                   the digital sphere.
                 </p>
                 <img src="../Images/growth.png" alt="" className="h-80" />
@@ -180,22 +180,22 @@ const HomePage = () => {
               <div className="flex flex-col gap-4 lg:flex-row justify-center items-center font-raleway">
                 <div className="border-[5px] rounded-3xl border-red-300 h-96 w-72 flex flex-col gap-4 justify-center items-center xm:w-80 lg:w-96">
                   <h1 className="text-xl font-bold text-center xm:text-3xl px-2">
-                    GROUND LEVEL MARKETING
-                  </h1>
-                  <p className="text-lg text-center font-medium xm:text-xl px-4">
-                    Forge authentic connections with grassroots strategies.
-                    Immerse in local communities for lasting impact and
-                    meaningful relationships.
-                  </p>
-                </div>
-                <div className="border-[5px] rounded-3xl border-blue-300 h-96 w-72 flex flex-col gap-4 justify-center items-center xm:w-80 lg:w-96">
-                  <h1 className="text-xl font-bold text-center xm:text-3xl px-2">
                     IT SOLUTIONS
                   </h1>
                   <p className="text-lg text-center font-medium xm:text-xl px-4">
                     Our IT solutions offer innovative strategies and
                     cutting-edge technologies to streamline operations, enhance
                     security, and drive digital transformation.
+                  </p>
+                </div>
+                <div className="border-[5px] rounded-3xl border-blue-300 h-96 w-72 flex flex-col gap-4 justify-center items-center xm:w-80 lg:w-96">
+                  <h1 className="text-xl font-bold text-center xm:text-3xl px-2">
+                    GROUND LEVEL MARKETING
+                  </h1>
+                  <p className="text-lg text-center font-medium xm:text-xl px-4">
+                    Forge authentic connections with grassroots strategies.
+                    Immerse in local communities for lasting impact and
+                    meaningful relationships.
                   </p>
                 </div>
                 <div className="border-[5px] rounded-3xl border-green-300 h-96 w-72 flex flex-col gap-4 justify-center items-center xm:w-80 lg:w-96">

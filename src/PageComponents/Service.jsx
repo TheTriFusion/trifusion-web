@@ -108,11 +108,11 @@ const ServicePage = () => {
                     unique business needs. With our expertise in mobile
                     technology and user-centric design, we help businesses of
                     all sizes create innovative and engaging mobile applications
-                    that drive success in today digital landscape.
+                    that drive success in today's digital landscape.
                   </p>
                   <ul className="text-lg p-2 list-disc list-inside lg:text-xl font-raleway">
-                    <li>Native IOS App Development</li>
-                    <li>Native Android App Development</li>
+                    <li>Android App Development</li>
+                    <li>IOS App Development</li>
                   </ul>
                 </div>
                 <div className="lg:w-2/5 w-full xm:w-1/2 shadow-lg shadow-gray-700 rounded-3xl flex justify-center">
@@ -136,9 +136,9 @@ const ServicePage = () => {
                     visibility and drive results
                   </p>
                   <ul className="text-lg p-2 list-disc list-inside lg:text-xl font-raleway">
-                     <li>Social Media Marketing</li>
+                    <li>Social Media Marketing</li>
                     <li>Influencer Marketing</li>
-                    <li>Ad's Campaign</li>
+                    <li>Ad Campaigns</li>
                     <li>Content Creation</li>
                     <li>Corporate Videos</li>
                   </ul>
@@ -158,7 +158,7 @@ const ServicePage = () => {
                     SALES & MARKETING
                   </h1>
                   <p className="text-lg p-8 font-raleway lg:text-xl">
-                   From lead generation to conversion optimization, we offer a
+                    From lead generation to conversion optimization, we offer a
                     full suite of services tailored to meet your unique sales
                     and marketing needs.
                   </p>
@@ -218,7 +218,7 @@ const ServicePage = () => {
                   </p>
                   <ul className="text-lg p-2 list-disc list-inside lg:text-xl font-raleway">
                     <li>Responsive Web Design</li>
-                    <li>UI Design</li>
+                    <li>UI/UX Design</li>
                     <li>Mobile App Design</li>
                   </ul>
                 </div>

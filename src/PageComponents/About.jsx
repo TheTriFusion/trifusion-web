@@ -50,13 +50,13 @@ const AboutPage = () => {
                     <div className='w-[80vw] xm:w-[70vw]'>
                         <article className='text-wrap text-xl p-8 text-justify xm:text-2xl font-raleway'>
                         The TriFusion is a dynamic company at the forefront of innovation in
-            web development, app development, sales, and digital marketing.
-            Founded with a vision to revolutionize these industries, we combine
-            cutting-edge technology with creative strategies to empower
+            web development, app development, digital marketing, and sales.
+            This company was founded with a vision to revolutionize these industries, Combining
+            cutting-edge technology with creative strategies, we empower
             businesses of all sizes. Our team of skilled professionals is
             dedicated to delivering tailored solutions that drive growth and
             success. With a focus on quality, efficiency, and customer
-            satisfaction, Tri Fusion strives to exceed expectations and make a
+            satisfaction, The TriFusion strives to exceed expectations and make a
             lasting impact in the digital world.
                         </article>
                     </div>

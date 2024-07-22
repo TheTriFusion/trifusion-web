@@ -16,18 +16,18 @@ const ContactPage = () => {
       .from('#contactBox',{
         yPercent: '100',
         duration: 1,
-        delay: 1,
+        delay: 0.5,
         zIndex: 0
       })
       .from('#contactHead',{
         opacity: 0,
         duration: 1,
-        delay: 1.5
+        delay: 0.5
       })
       .from('#footerBox',{
         yPercent: '100',
         duration: 1,
-        delay: 1.6
+        delay: 0.5
       })
     },contact)
     return () => ctx.revert();

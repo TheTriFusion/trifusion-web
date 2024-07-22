@@ -26,7 +26,7 @@ const ServicePage = () => {
       .from('#footerBox',{
         yPercent: '-100',
         duration: 1,
-        delay: 1.5
+        delay: 0.5
       })
     }, service)
     return () => ctx.revert();

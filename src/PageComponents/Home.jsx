@@ -143,7 +143,7 @@ const HomePage = () => {
                 </h1>
               </div>
               <div>
-                <ul className="text-center list-inside text-3xl font-raleway font-medium py-8 flex flex-col gap-8 lg:text-start px-8 xm:text-5xl lg:text-6xl">
+                <ul className="text-center list-inside text-2xl font-raleway font-medium py-8 flex flex-col gap-8 lg:text-start px-8 xm:text-4xl lg:text-5xl">
                   {services.map((items, index) => {
                     return (
                       <>

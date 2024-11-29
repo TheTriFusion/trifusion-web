@@ -137,8 +137,8 @@ const ServicePage = () => {
                   </p>
                   <ul className="text-lg p-2 list-disc list-inside lg:text-xl font-raleway">
                     <li>Automation Anywhere</li>
-                    <li>UiPath</li>
                     <li>Power Automate</li>
+                    <li>UiPath</li>
                     <li>Selenium</li>
                   </ul>
                 </div>

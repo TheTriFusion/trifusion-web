@@ -22,7 +22,7 @@ const FooterPage = () => {
                         <br/>
                         Bhilwara, Rajasthan, 311001
                     </li>
-                    <li>+91-6378122780 / +91-8005814384</li>
+                    <li>+91-6378133780 / +91-8005814384</li>
                     <li>thetrifusion@gmail.com</li>
                     <li>www.thetrifusion.com</li>
                 </ul>

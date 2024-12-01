@@ -51,6 +51,7 @@ const HomePage = () => {
   const services = [
     "Web Development",
     "App Development",
+    "Robotic Process Automation",
     "Digital Marketing",
     "Sales & Marketing",
     "Branding",
@@ -66,9 +67,9 @@ const HomePage = () => {
           id="loadBox"
           className="absolute w-screen h-screen inset-0 z-10 text-3xl xm:text-5xl lg:text-6xl 2xl:text-8xl flex flex-col gap-8 justify-center items-start font-libre font-semibold bg-[#FEFDED] px-8 overflow-y-hidden"
         >
-          <h1 id="heading-one">Sales</h1>
-          <h1 id="heading-two">Marketing</h1>
-          <h1 id="heading-three">Development</h1>
+          <h1 id="heading-one">Development</h1>
+          <h1 id="heading-two">Automation</h1>
+          <h1 id="heading-three">Marketing</h1>
         </section>
         <section
           id="contentBox"
@@ -142,7 +143,7 @@ const HomePage = () => {
                 </h1>
               </div>
               <div>
-                <ul className="text-center list-inside text-3xl font-raleway font-medium py-8 flex flex-col gap-8 lg:text-start px-8 xm:text-5xl lg:text-6xl">
+                <ul className="text-center list-inside text-2xl font-raleway font-medium py-8 flex flex-col gap-8 lg:text-start px-8 xm:text-4xl lg:text-5xl">
                   {services.map((items, index) => {
                     return (
                       <>
@@ -203,7 +204,7 @@ const HomePage = () => {
                     TRAINING PROGRAMS
                   </h1>
                   <p className="text-lg text-center font-medium xm:text-xl px-4">
-                    Empower teams with dynamic training from sales to digital
+                    Empower teams with dynamic training. From sales to digital
                     marketing, cultivate expertise for success in today's
                     business landscape.
                   </p>

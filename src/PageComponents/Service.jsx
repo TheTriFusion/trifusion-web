@@ -16,7 +16,7 @@ const ServicePage = () => {
       })
       .from('#serviceBox',{
         yPercent: '100',
-        duration: 1.5,
+        duration: 1,
         delay: 0.5,
       })
       .from('#mainBox',{
@@ -26,7 +26,7 @@ const ServicePage = () => {
       .from('#footerBox',{
         yPercent: '-100',
         duration: 1,
-        delay: 1.5
+        delay: 0.5
       })
     }, service)
     return () => ctx.revert();
@@ -44,7 +44,7 @@ const ServicePage = () => {
                   WE ARE GOOD AT
                 </h1>
                 <p className="w-full text-xl xm:text-2xl text-center xm:text-left m:w-1/2 px-8 font-raleway">
-                  Designing digital products with an emphasis on the user and
+                  Designing digital products with an emphasis on user experience and 
                   visual design.
                 </p>
               </div>
@@ -79,7 +79,7 @@ const ServicePage = () => {
                     Specialized in crafting exceptional web experiences tailored
                     to meet your unique business objectives. Our team of
                     experienced developers utilizes the latest technologies and
-                    best practices to deliver highquality, responsive websites
+                    best practices to deliver high quality, responsive websites
                     that drive results.
                   </p>
                   <ul className="text-lg p-2 list-disc list-inside lg:text-xl font-raleway">
@@ -104,11 +104,11 @@ const ServicePage = () => {
                     APP DEVELOPMENT
                   </h1>
                   <p className="text-lg p-8 font-raleway lg:text-xl">
-                    Cutting-edged app development solutions tailored to your
-                    unique business needs. With our expertise in mobile
+                    Cutting-edge app development solutions tailored to your
+                    unique business needs are our specialty. With our expertise in mobile
                     technology and user-centric design, we help businesses of
                     all sizes create innovative and engaging mobile applications
-                    that drive success in today digital landscape.
+                    that drive success in today's digital landscape.
                   </p>
                   <ul className="text-lg p-2 list-disc list-inside lg:text-xl font-raleway">
                     <li>Android App Development</li>
@@ -124,6 +124,34 @@ const ServicePage = () => {
                 </div>
               </section>
               {/* |||  */}
+
+              <section className="bg-gray-100 h-max py-8 px-4 flex flex-col gap-4 m:flex-row m:gap-2 justify-center items-center">
+                <div className="w-full lg:w-4/5 p-4">
+                  <h1 className="text-xl font-libre font-semibold text-center lg:text-3xl lg:text-left">
+                    Robotic Process Automation
+                  </h1>
+                  <p className="text-lg p-8 font-raleway lg:text-xl">
+                    We deliver seamless automation solutions tailored to your needs, ensuring accuracy, efficiency, and cost savings. 
+                    Trust us to simplify your processes, enhance productivity, and give your team the freedom to innovate. 
+                    Experience excellence in automation with us today!
+                  </p>
+                  <ul className="text-lg p-2 list-disc list-inside lg:text-xl font-raleway">
+                    <li>Automation Anywhere</li>
+                    <li>Power Automate</li>
+                    <li>UiPath</li>
+                    <li>Selenium</li>
+                  </ul>
+                </div>
+                <div className="lg:w-2/5 w-full xm:w-1/2 shadow-lg shadow-gray-700 rounded-3xl flex justify-center">
+                  <img
+                    src="../Images/service-RPA.png"
+                    alt=""
+                    className="rounded-3xl xl:w-96 xl:h-96 w-64 h-64 content-center"
+                  />
+                </div>
+              </section>
+              {/* |||  */}
+              
               <section className="bg-gray-100 h-max py-8 px-4 flex flex-col gap-4 m:flex-row m:gap-2 justify-center items-center">
                 <div className="w-full lg:w-4/5 p-4">
                   <h1 className="text-xl font-libre font-semibold text-center lg:text-3xl lg:text-left">
@@ -131,8 +159,8 @@ const ServicePage = () => {
                   </h1>
                   <p className="text-lg p-8 font-raleway lg:text-xl">
                     Specialized in elevating your online presence through
-                    strategic digital marketing. From SEO to social media, our
-                    tailored solutions are designed to boost your brand
+                    strategic digital marketing. Our tailored solutions
+                    from SEO to social media,  are designed to boost your brand
                     visibility and drive results.
                   </p>
                   <ul className="text-lg p-2 list-disc list-inside lg:text-xl font-raleway">
@@ -158,7 +186,7 @@ const ServicePage = () => {
                     SALES & MARKETING
                   </h1>
                   <p className="text-lg p-8 font-raleway lg:text-xl">
-                   From lead generation to conversion optimization, we offer a
+                    From lead generation to conversion optimization, we offer a
                     full suite of services tailored to meet your unique sales
                     and marketing needs.
                   </p>
@@ -183,7 +211,7 @@ const ServicePage = () => {
                   BRANDING
                   </h1>
                   <p className="text-lg p-8 font-raleway lg:text-xl">
-                    Branding services specialize in creating, managing, and enhancing a company's identity through visual elements, messaging, and strategic marketing, helping businesses establish a strong and consistent presence in their industry.
+                    Branding services specialize in creating, managing, and enhancing a company's identity through visual elements, messaging, and strategic marketing, thereby helping businesses establish a strong and consistent presence in their industry.
                   
                   </p>
                   <ul className="text-lg p-2 list-disc list-inside lg:text-xl font-raleway">
@@ -210,11 +238,11 @@ const ServicePage = () => {
                     UI / UX
                   </h1>
                   <p className="text-lg p-8 font-raleway lg:text-xl">
-                    UI/UX design is the catalyst behind the success of any web
-                    or mobile app. We are with a knack of turning great ideas
-                    into meaningful interactions. From the initial concept to
-                    information architecture, visual identity, and UX design, we
-                    offer a full range of design services.
+                    UI/UX design serves as the catalyst behind the success of 
+                    any web or mobile app. With a knack for turning great ideas
+                    into meaningful interactions, we offer a full range of design
+                    services, from the initial concept to information architecture,
+                    visual identity, and UX design.
                   </p>
                   <ul className="text-lg p-2 list-disc list-inside lg:text-xl font-raleway">
                     <li>Responsive Web Design</li>

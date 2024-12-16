@@ -3,6 +3,7 @@ import '../App.css';
 import NavbarPage from './Navbar';
 import FooterPage from "./Footer";
 import gsap from "gsap";
+import serviceRpaImage from "../Images/service-rpa.png";
 
 const ServicePage = () => {
   const service = useRef(null);
@@ -143,11 +144,11 @@ const ServicePage = () => {
                   </ul>
                 </div>
                 <div className="lg:w-2/5 w-full xm:w-1/2 shadow-lg shadow-gray-700 rounded-3xl flex justify-center">
-                  <img
-                    src="../Images/service-RPA.png"
+                   <img
+                    src={serviceRpaImage}
                     alt=""
                     className="rounded-3xl xl:w-96 xl:h-96 w-64 h-64 content-center"
-                  />
+                  />
                 </div>
               </section>
               {/* |||  */}
